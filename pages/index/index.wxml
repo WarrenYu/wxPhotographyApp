@@ -1,11 +1,19 @@
-<view class="page-body">
-    <view class="page-section page-section-spacing swiper">
-        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:400rpx">
-            <block wx:for="{{imgUrls}}" wx:key="*this">
+<view>
+    <view class=" swiper">
+        <swiper indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" style="height:400rpx">
+            <block wx:for="{{swiper.imgUrls}}" wx:key="*this">
                 <swiper-item>
                     <image src='{{item}}' class='slide-image' mode='aspectFill'></image>
                 </swiper-item>
             </block>
         </swiper>
     </view>
+
+    <view class="navigator-image">
+        <image src='../../image/首页.png' style='height: 60px ' mode='aspectFit' bindtap="changeName">作品</image>
+        <image src='../../image/照片.png' style='height: 60px ' mode='aspectFit' bindtap="navigateToPicturePage">1</image>
+        <image src='../../image/联系我.png' style='height: 60px ' mode='aspectFit' bindtap="changeName">1</image>
     </view>
+
+
+</view>

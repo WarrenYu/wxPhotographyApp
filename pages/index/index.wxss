@@ -1,9 +1,19 @@
 /**index.wxss**/
 .swiper {
- height: 400rpx;
+ height: 400 rpx;
  width: 100%;
 }
 .slide-image {
  height: 100%;
  width: 100%;
+}
+
+.navigator-image {
+  width: 700rpx;
+  position: relative;
+  left: 4%;
+  top: 40rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
