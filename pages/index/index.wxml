@@ -1,5 +1,5 @@
 <view>
-    <view class=" swiper">
+    <view class="swiper">
         <swiper indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" style="height:400rpx">
             <block wx:for="{{swiper.imgUrls}}" wx:key="*this">
                 <swiper-item>
@@ -10,10 +10,19 @@
     </view>
 
     <view class="navigator-image">
-        <image src='../../image/首页.png' style='height: 60px ' mode='aspectFit' bindtap="changeName">作品</image>
-        <image src='../../image/照片.png' style='height: 60px ' mode='aspectFit' bindtap="navigateToPicturePage">1</image>
-        <image src='../../image/联系我.png' style='height: 60px ' mode='aspectFit' bindtap="changeName">1</image>
+        <image src='../../image/首页.png' style='height: 60px ' mode='aspectFit' bindtap="changeName"></image>
+        <image src='../../image/照片.png' style='height: 60px ' mode='aspectFit' bindtap="navigateToPicturePage"></image>
+        <image src='../../image/联系我.png' style='height: 60px ' mode='aspectFit' bindtap="changeName"></image>
     </view>
 
+    <view class="people-image-box">
+        <text >人物</text>
+        <view  >
+            <image class="people-image" src='https://www.superwarren.top/wp-content/uploads/2018/03/wxApp1-1.jpg'  mode='aspectFit' bindtap="changeName"></image>
+            <image  class="people-image" src='https://www.superwarren.top/wp-content/uploads/2018/03/wxApp2.jpg'  mode='aspectFit' bindtap="navigateToPicturePage"></image>
+            <image class="people-image" src='https://www.superwarren.top/wp-content/uploads/2018/03/wxApp3.jpg'  mode='aspectFit' bindtap="changeName"></image>
+        </view>
+        
+    </view>
 
 </view>
